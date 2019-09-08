@@ -1,0 +1,44 @@
+.map {
+  width: 100vw;
+  min-width: 320px;
+}
+
+.map__iframe {
+  width: 100%;
+  min-height: 350px;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(218, 228, 197);
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .map__iframe {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    width: @desktop-width;
+    margin: 0 auto;
+  }
+
+  .map__iframe {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
+  }
+}

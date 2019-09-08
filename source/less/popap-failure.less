@@ -1,0 +1,45 @@
+.popap-failure {
+  box-sizing: border-box;
+  width: 320px;
+  height: 283px;
+  padding: 43px 42px 20px;
+}
+
+.popap-failure__button {
+  margin: 10px;
+  min-width: 180px;
+  .font2(@font-color2);
+}
+
+.popap-failure__caption {
+  .font2(@font-color3);
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .popap-failure {
+    width: 400px;
+    height: 347px;
+    padding: 64px 60px 40px;
+  }
+
+  .popap-failure__button {
+    margin: 0;
+    min-width: 272px;
+    .font5(@font-color2);
+  }
+
+  .popap-failure__caption {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 800;
+    color: @font-color3;
+    padding: 0 20px;
+  }
+
+  .popap-failure__text {
+    margin: 0;
+    margin-bottom: 25px;
+  }
+}

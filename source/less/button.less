@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  min-width: 180px;
+  margin: 0;
+  padding: 16px 47px;
+  .font5(@font-color2);
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: @background-color2;
+  border: none;
+}
+
+.button:focus,
+.button:hover {
+  background-color: @background-color2-hov;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: @background-color2-act;
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
+}

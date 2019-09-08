@@ -1,0 +1,168 @@
+.gallery__header {
+  padding: 18px 20px 7px;
+  text-align: center;
+  white-space: pre-line;
+}
+
+.gallery__slogan {
+  display: block;
+  margin-bottom: 5px;
+  .font2(@font-color3);
+}
+
+.gallery__intro {
+  margin: 0;
+  .font6(400, @font-color1);
+}
+
+.gallery__list {
+  .clear-list;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery__item {
+  padding: 22px 20px 15px 20px;
+  border-top: 1px solid gray;
+}
+
+.gallery__image {
+  width: 280px;
+  height: 280px;
+}
+
+.gallery__title {
+  margin: 0;
+  margin-top: 11px;
+  .font6(800, @font-color3);
+}
+
+.gallery__autor,
+.gallery__autor-name {
+  display: inline;
+  .font6(400, @font-color1);
+  text-transform: none;
+  font-style: normal;
+}
+
+.gallery__likes {
+  padding-top: 6px;
+  .font6(800, @font-color3);
+}
+
+.gallery__image-like {
+  margin-right: 11px;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery {
+    padding: 55px 60px 31px 60px;
+  }
+
+  .gallery__header {
+    padding: 0;
+    margin-bottom: 48px;
+  }
+
+  .gallery__item {
+    width: 50%;
+    padding: 0;
+    border-top: none;
+  }
+
+  .gallery__item:first-child {
+    width: 100%;
+  }
+
+  .gallery__image {
+    display: block;
+    width: 100%;
+    height: 267px;
+    object-fit: cover;
+  }
+
+  .gallery__image--first {
+    height: 400px;
+  }
+
+  .gallery__wrapper-text {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    background-color: #eaeaea;
+  }
+
+  .gallery__title {
+    margin: 16px 20px 0 20px;
+  }
+
+  .gallery__autor {
+    margin-left: 20px;
+  }
+
+
+  .gallery__likes {
+    min-width: 62px;
+    margin-right: 22px;
+    margin-top: 21px;
+  }
+
+  .gallery__item:first-child .gallery__likes {
+    margin-right: 21px;
+  }
+
+  .gallery__image-like {
+    margin-right: 4px;
+  }
+
+  .gallery__slogan {
+    margin-bottom: 9px;
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 800;
+    color: @font-color1;
+  }
+
+  .gallery__intro {
+    margin: 0 106px;
+    white-space: normal;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__item {
+    width: 33.3%;
+    position: relative;
+  }
+
+  .gallery {
+    padding: 91px 0 35px 0;
+  }
+
+  .gallery__header {
+    margin-bottom: 52px;
+  }
+
+  .gallery__intro {
+    margin: 0 377px;
+  }
+
+  .gallery__wrapper-text {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .gallery__image-like {
+    fill: white;
+  }
+
+  .gallery__title,
+  .gallery__autor,
+  .gallery__autor-name,
+  .gallery__likes {
+    color: white;
+  }
+}

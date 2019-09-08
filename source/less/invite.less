@@ -1,0 +1,51 @@
+.invite {
+  text-align: center;
+  margin: 0;
+  padding: 28px 20px 49px 20px;
+}
+
+.invite__slogan {
+  display: block;
+  margin-bottom: 20px;
+  .font5(@font-color3);
+}
+
+.invite__intro {
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0;
+  .font6(400, @font-color1);
+}
+
+@media (min-width: @tablet-width) {
+  .invite {
+    margin-bottom: 10px;
+  }
+
+  .invite__intro {
+    white-space: pre-line;
+    margin-bottom: 41px;
+  }
+
+  .invite__slogan {
+    margin-bottom: 32px;
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 800;
+    color: @font-color3;
+  }
+
+  .invite__button {
+    min-width: 363px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .invite {
+    margin-bottom: 18px;
+  }
+
+  .invite__intro {
+    margin-bottom: 45px;
+  }
+}

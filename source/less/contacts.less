@@ -1,0 +1,117 @@
+.contacts {
+  padding: 18px 20px 18px 20px;
+  .font2(@font-color3);
+}
+
+.contacts__title {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 0.8px;
+}
+
+.contacts__text {
+  display: block;
+  padding-left: 22px;
+  .font3(@font-color1);
+}
+
+.contacts__input {
+  position: relative;
+  box-sizing: border-box;
+  width: 280px;
+  height: 58px;
+  margin: 0 auto;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  padding: 3px 0 0 21px;
+  .font2(@font-color3);
+  background-color: #f2f2f2;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: right 20px center, right;
+}
+
+.contacts__input--phone {
+  background-image: url("../img/icon-phone.svg"),
+    linear-gradient(to left, #e6e6e6 58px, transparent 58px);
+}
+
+.contacts__input--email {
+  background-image: url("../img/icon-mail.svg"),
+    linear-gradient(to left, #e6e6e6 58px, transparent 58px);
+}
+
+.contacts__input:hover {
+  background-color: #e5e5e5;
+}
+
+.contacts__input:focus,
+.contacts__input:active {
+  background-color: white;
+  outline: none;
+  box-shadow: inset 0 0 0 4px rgba(154, 154, 154, 0.52);
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 80px 8% 20px;
+    padding: 11px 0;
+    border-top: 1.5px solid #f2f2f2;
+  }
+
+  .contacts__title {
+    position: relative;
+    bottom: 26px;
+    background-color: white;
+    width: 397px;
+    margin: 0 auto;
+    .font5(@font-color3);
+  }
+
+  .contacts__input {
+    width: 100%;
+    margin: 6px auto 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    margin: 78px 121px 20px;
+    padding-top: 61px;
+    padding-bottom: 35px;
+  }
+
+  .contacts__title {
+    bottom: 75px;
+  }
+
+  .contacts__wrapper-all {
+    display: flex;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
+  .contacts__text {
+    display: block;
+    padding-left: 0;
+    padding-top: 4px;
+  }
+
+  .contacts__text--hidden {
+    display: none;
+  }
+
+  .contacts__input {
+    width: 316px;
+    margin: 0;
+    margin-left: 16px;
+    padding-top: 0;
+  }
+}
